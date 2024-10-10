@@ -36,6 +36,12 @@ variable "stage_name" {
   default     = "v1"
 }
 
+variable "stage_xray_tracing_enabled" {
+  type        = bool
+  description = "Whether X-ray tracing is enabled for this stage"
+  default     = false
+}
+
 # Method settings
 variable "method_setting_path" {
   type        = string
